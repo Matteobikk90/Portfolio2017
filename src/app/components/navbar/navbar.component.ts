@@ -11,13 +11,16 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   	$('.ms-burgerbtn').on('click', function(event){
-		$(this).toggleClass('oppenned');
-		event.stopPropagation();
-	});
-	$('body').on('click', function(event) {
-		$('.ms-burgerbtn').removeClass('oppenned');
-	});
+  		$(this).toggleClass('oppenned');
+  		event.stopPropagation();
+	  });
+
+  	$('body').on('click', function() {
+  		$('.ms-burgerbtn').removeClass('oppenned');
+  	});
+
   }
 
 }

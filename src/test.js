@@ -1,18 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Matteo Soresini</title>
-	<meta name="description" content="Matteo Soresini - I am a Front End Developer, born in Turin but worked in London. My experience at VideoSmart was unforgettable" />
-	<meta name="keywords" content="front end developer, web design, javascript, css, html5, effect, fragment, parallax, typed, flexbox" />
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-
-<body>
-  <app-root></app-root>
-  <script>
-  	/**
+/**
  * main.js
  * http://www.codrops.com
  *
@@ -302,25 +288,3 @@
 	window.FragmentsFx = FragmentsFx;
 
 })(window);
-  </script>
-  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  
-  <script>
-  	imagesLoaded(document.querySelectorAll('.fragment-wrap'), { background: true }, function() {
-					new FragmentsFx(document.getElementById('frag-1'));
-					new FragmentsFx(document.getElementById('frag-2'), {
-						fragments: 15,
-						boundaries: {x1: 200, x2: 100, y1: 10, y2: 50},
-						randomIntervals: {
-							top: {min: 0,max: 90},
-							left: {min: 0,max: 90},
-							dimension: {
-								width: {min: 5,max: 20, fixedHeight: 5},
-								height: {min: 10,max: 100, fixedWidth: 5}
-							}
-						}
-					});
-				});
-  </script>
-</body>
-</html>
