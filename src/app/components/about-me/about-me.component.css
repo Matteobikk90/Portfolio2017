@@ -1,17 +1,3 @@
-body {
-	background: #f0f0f0;
-}
-
-a:hover,
-a:focus {
-	color: #333;
-	text-decoration: none;
-}
-
-.main {
-	overflow: hidden;
-}
-
 .hidden {
 	position: absolute;
 	overflow: hidden;
